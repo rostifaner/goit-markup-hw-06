@@ -1,0 +1,129 @@
+@media screen and (min-width: 0) and (max-width: 1157px) {
+  /**-----------------------RESULTS-NONE---------------------------**/
+  .results {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 428px) {
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+  /**-----------------------GOAL-768---------------------------**/
+  .goal-list {
+    column-gap: 24px;
+  }
+
+  .goal-list-item {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+
+  .goal-title {
+    text-align: start;
+  }
+
+  /**-----------------------TEAM-768---------------------------**/
+  .team-section {
+    padding: 108px 0;
+  }
+
+  .team-list {
+    column-gap: 24px;
+  }
+  /**-----------------------CUSTOMERS-768---------------------------**/
+  .customers-list {
+    column-gap: 16px;
+    padding-right: 92px;
+    padding-left: 92px;
+  }
+
+  .customers-item {
+    flex-basis: calc((100% - 48px) / 3);
+  }
+  /**-----------------------FOOTER-768---------------------------**/
+}
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  /**-----------------------GOAL-1158---------------------------**/
+  .goal-section {
+    padding: 120px 0;
+  }
+
+  .goal-list {
+    column-gap: 24px;
+  }
+
+  .goal-svg {
+    display: flex;
+    width: 264px;
+    height: 112px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    background: var(--cloud, #f4f4fd);
+    margin-bottom: 8px;
+  }
+
+  .goal-list-item {
+    flex-basis: calc((100% - 24px * 3) / 4);
+  }
+
+  .goal-title {
+    text-align: start;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+
+  /**-----------------------RESULTS-1158---------------------------**/
+  .results {
+    padding-bottom: 120px;
+  }
+
+  .result-title {
+    color: var(--navyblue);
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    margin-bottom: 72px;
+  }
+
+  .results-list {
+    display: flex;
+    gap: 24px;
+  }
+
+  .results-list-item {
+    flex-basis: calc((100% - 48px) / 3);
+  }
+  /**-----------------------TEAM-1158---------------------------**/
+  .team-section {
+    padding: 120px 0;
+  }
+
+  .team-card {
+    flex-basis: calc((100% - 72px) / 4);
+  }
+  /**-----------------------CUSTOMERS-1158---------------------------**/
+  .customers {
+    padding: 120px 0;
+  }
+
+  .customers-item {
+    flex-basis: calc((100% - 24px * 5) / 6);
+  }
+  /**-----------------------FOOTER-1158---------------------------**/
+  .footer-section {
+    padding: 100px 0;
+  }
+}
