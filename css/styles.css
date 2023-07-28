@@ -172,21 +172,32 @@ body {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people_office.jpg);
+    url(../images/people_office_mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .main-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people_office_mob_2x.jpg);
+  }
 }
 
 .main-title {
   color: var(--white);
   text-align: center;
-  font-size: 56px;
+  font-size: 36px;
   font-weight: 700;
-  line-height: 1.07;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   margin: 0 auto;
-  max-width: 496px;
+  max-width: 320px;
   margin-bottom: 48px;
 }
 
@@ -573,7 +584,6 @@ body {
   line-height: 1.5;
   letter-spacing: 0.04em;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  opacity: 0.3;
 }
 
 .footer-form-input::placeholder {

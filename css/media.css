@@ -14,6 +14,10 @@
     align-items: center;
   }
 
+  .footer-form-input {
+    opacity: 0.3;
+  }
+
   .footer-form {
     width: 100%;
   }
@@ -40,6 +44,33 @@
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
+  }
+  /**-----------------------HEADER-769---------------------------**/
+
+  /**-----------------------MAIN-768---------------------------**/
+  .main-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people_office_tab.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .main-section {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/people_office_tab_2x.jpg);
+    }
+  }
+
+  .main-title {
+    font-size: 56px;
+    line-height: 1.07;
+    max-width: 496px;
   }
   /**-----------------------GOAL-768---------------------------**/
   .goal-list {
@@ -98,6 +129,27 @@
     max-width: 1158px;
     padding-right: 15px;
     padding-left: 15px;
+  }
+  /**-----------------------HEADER-1158---------------------------**/
+
+  /**-----------------------MAIN-1158---------------------------**/
+  .main-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people_office.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .main-section {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/people_office_2x.jpg);
+    }
   }
   /**-----------------------GOAL-1158---------------------------**/
   .goal-section {
