@@ -52,7 +52,6 @@ body {
 
 .container {
   max-width: 428px;
-  /* min-width: 320px; */
   width: 100%;
   padding-right: 16px;
   padding-left: 16px;
@@ -100,6 +99,21 @@ body {
   display: none;
 }
 
+.current {
+  color: var(--secondary-state);
+}
+
+.current::after {
+  width: 100%;
+  height: 4px;
+  display: block;
+  border-radius: 2px;
+  background-color: var(--secondary-state);
+  content: "";
+  bottom: -1px;
+  position: absolute;
+}
+
 .link-address {
   font-size: 12px;
   line-height: 1.2;
@@ -118,17 +132,26 @@ body {
   background-color: white;
   border: none;
   display: flex;
+  cursor: pointer;
 }
 
 /**-----------------------header-mob---------------------------**/
 .mob-menu {
-  padding: 24px 40px;
+  padding: 24px 24px 40px 40px;
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   background: var(--white);
+  overflow: auto;
+  z-index: 999;
+  transform: translateX(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mob-menu.is-open {
+  transform: translateX(0);
 }
 
 .mob-close-btn {
@@ -198,7 +221,7 @@ body {
 
 .mob-svg-list {
   display: flex;
-  gap: 56px;
+  justify-content: space-between;
 }
 
 .mob-svg-item {
@@ -215,7 +238,6 @@ body {
   align-items: center;
   height: 100%;
   width: 100%;
-  /* transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 .mob-svg-item .icon {
@@ -449,7 +471,7 @@ body {
 }
 /**----------------PORTFOLIO-CASES-----------------------**/
 .cases {
-  padding-top: 96px;
+  padding-top: 100px;
   padding-bottom: 120px;
 }
 
@@ -457,7 +479,9 @@ body {
   display: flex;
   margin-bottom: 72px;
   gap: 24px;
-  justify-content: center;
+  /* justify-content: center; */
+  justify-content: flex-start;
+  flex-wrap: wrap;
 }
 
 .button-filter {
@@ -491,10 +515,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 48px 24px;
-}
-
-.thumb-item {
-  width: calc((100% - 48px) / 3);
+  justify-content: center;
 }
 
 .thumb-item .link {
@@ -511,6 +532,19 @@ body {
   padding: 32px 16px;
   border: 1px solid var(--cornflower);
   border-top: none;
+}
+
+.thumb-title {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+.thumb-desc {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
 .popup {
