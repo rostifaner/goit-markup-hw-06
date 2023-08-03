@@ -1,13 +1,23 @@
 @media screen and (min-width: 0) and (max-width: 1157px) {
-  /**-----------------------RESULTS-NONE---------------------------**/
   .results {
     display: none;
   }
 }
 
+@media screen and (min-width: 320px) and (max-width: 427px) {
+  .mob-link-address-tel {
+    font-size: 26px;
+  }
+
+  .modal {
+    width: 100%;
+  }
+}
+
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .header .container {
-    padding: 24px 16px 22px 16px;
+    padding-top: 24px;
+    padding-bottom: 22px;
     justify-content: space-between;
   }
 
@@ -49,7 +59,7 @@
 
 @media screen and (min-width: 428px) {
   .team-section > .container {
-    max-width: 264px;
+    max-width: 296px;
   }
 
   .mob-svg-list {
@@ -68,6 +78,10 @@
     display: flex;
     align-items: center;
     margin-right: auto;
+  }
+
+  .logo {
+    margin-right: 120px;
   }
 
   .menu-list {
@@ -92,7 +106,12 @@
     color: var(--secondary-state);
   }
 
+  .current {
+    color: var(--secondary-state);
+  }
+
   .current::after {
+    background-color: var(--secondary-state);
     width: 100%;
     height: 4px;
     display: block;
@@ -137,6 +156,7 @@
     font-size: 56px;
     line-height: 1.07;
     max-width: 496px;
+    margin-bottom: 36px;
   }
   /**-----------------------GOAL-768---------------------------**/
   .goal-list {
@@ -190,6 +210,9 @@
     max-width: 264px;
   }
   /**-----------------------portfolio-768---------------------------**/
+  .button-filter {
+    padding: 12px 24px;
+  }
   .cases {
     padding-top: 64px;
     padding-bottom: 96px;
@@ -234,6 +257,8 @@
   }
   /**-----------------------MAIN-1158---------------------------**/
   .main-section {
+    padding-top: 188px;
+    padding-bottom: 188px;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -251,6 +276,11 @@
         url(../images/people_office_2x.jpg);
     }
   }
+
+  .main-title {
+    margin-bottom: 48px;
+  }
+
   /**-----------------------GOAL-1158---------------------------**/
   .goal-section {
     padding: 120px 0;
@@ -276,6 +306,10 @@
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
+  }
+
+  .goal-desc {
+    font-weight: 400;
   }
 
   /**-----------------------RESULTS-1158---------------------------**/
