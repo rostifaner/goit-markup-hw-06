@@ -346,7 +346,7 @@ body {
 /**-----------------------TEAM---------------------------**/
 .team-section {
   background-color: var(--cloud);
-  padding-top: 96px;
+  padding: 96px 0;
 }
 
 .team-head {
